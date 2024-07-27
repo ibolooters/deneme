@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Tasarım Portalı</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            background-color: #ffffcc; /* Limon sarısı rengi */
+            animation: gradient 15s infinite alternate; /* Arkaplan için animasyon */
+        }
+
+        @keyframes gradient {
+            0% {
+                background-color: #ffffcc;
+            }
+            100% {
+                background-color: #ffeb99; /* Biraz daha açık sarı */
+            }
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-size: 1.2em; /* Yazıları biraz büyütüyoruz */
+            animation: colorchange 20s infinite alternate; /* Başlık için renk animasyonu */
+        }
+
+        @keyframes colorchange {
+            0% {
+                color: #007bff; /* Başlık rengi */
+            }
+            100% {
+                color: #ff0000; /* Kırmızı renk */
+            }
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 20px;
+            animation: slidein 2s ease-in-out; /* Container için kayma animasyonu */
+        }
+
+        @keyframes slidein {
+            from {
+                margin-left: 100%;
+                width: 300%;
+            }
+            to {
+                margin-left: 0%;
+                width: 100%;
+            }
+        }
+
+        .highlight {
+            color: #007bff;
+        }
+
+        .section {
+            animation: fadein 2s ease-in-out; /* Bölüm için soluk animasyon */
+        }
+
+        @keyframes fadein {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Web Tasarım Portalı</h1>
+            <nav>
+                <ul>
+                    <li><a href="#html">HTML (Hipertext İşaretleme Dili)</a></li>
+                    <li><a href="#css">CSS (Kaskad Stil Şablonları)</a></li>
+                    <li><a href="#javascript">JavaScript</a></li>
+                    <li><a href="#responsive">Duyarlı Tasarım</a></li>
+                    <li><a href="#python">Python</a></li>
+                    <li><a href="#java">Java</a></li>
+                    <li><a href="#csharp">C#</a></li>
+                    <li><a href="#php">PHP</a></li>
+                    <li><a href="#ruby">Ruby</a></li>
+                    <!-- Diğer konu başlıkları buraya eklenebilir -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="html" class="section">
+        <div class="container">
+            <h2>HTML (Hipertext İşaretleme Dili)</h2>
+            <p><span class="highlight">HTML</span>, web sayfalarının yapısal içeriğini tanımlamak için kullanılan bir işaretleme dilidir.</p>
+            <p>Örneğin, bir paragrafı tanımlamak için aşağıdaki kod kullanılır:</p>
+            <pre>
+                <code>
+                    &lt;p&gt;Bu bir paragraf örneğidir.&lt;/p&gt;
+                </code>
+            </pre>
+        </div>
+    </section>
+
+    <section id="css" class="section">
+        <div class="container">
+            <h2>CSS (Kaskad Stil Şablonları)</h2>
+            <p><span class="highlight">CSS</span>, HTML ve XML tabanlı belgelerin görüntülenme biçimini (stilini) tanımlamak için kullanılan bir stil yapısıdır.</p>
+            <p>Örneğin, bir div elemanını mavi arka plan ve beyaz renkli metin ile stillemek için şu kod kullanılır:</p>
+            <pre>
+                <code>
+                    &lt;style&gt;
+                    div {
+                        background-color: blue;
+                        color: white;
+                    }
+                    &lt;/style&gt;
+                </code>
+            </pre>
+        </div>
+    </section>
+
+    <section id="javascript" class="section">
+        <div class="container">
+            <h2>JavaScript</h2>
+            <p><span class="highlight">JavaScript</span>, web sayfalarına dinamik ve etkileşimli özellikler eklemek için kullanılan bir programlama dilidir.</p>
+            <p>Örneğin, bir butona tıklandığında bir metni değiştirmek için şu kod kullanılır:</p>
+            <pre>
+                <code>
+                    &lt;button onclick="document.getElementById('demo').innerHTML = 'Merhaba Dünya!'&gt;Tıkla&lt;/button&gt;
+                </code>
+            </pre>
+        </div>
+    </section>
+
+    <section id="responsive" class="section">
+        <div class="container">
+            <h2>Duyarlı Tasarım</h2>
+            <p><span class="highlight">Duyarlı Tasarım</span>, web sitelerinin farklı ekran boyutlarına ve cihazlara uyumlu olmasını sağlayan bir tasarım yaklaşımıdır.</p>
+            <p>Örneğin, bir web sitesinin mobil cihazlarda kolay okunabilir olması için şu kod kullanılır:</p>
+            <pre>
+                <code>
+                    @media only screen and (max-width: 600px) {
+                        body {
+                            font-size: 14px;
+                        }
+                    }
+                </code>
+            </pre>
+        </div>
+    </section>
+
+    <section id="python" class="section">
+        <div class="container">
+            <h2>Python</h2>
+            <p><span class="highlight">Python</span>, genel amaçlı, yüksek seviyeli, dinamik ve kolay anlaşılabilir bir programlama dilidir.</p>
+            <p>Örneğin, bir Python kodu ile ekrana "Merhaba Dünya!" yazdırmak için şu kod kullanılır:</p>
+            <pre>
+                <code>
+                    print("Merhaba Dünya!")
+                </code>
+            </pre>
+        </div>
+    </section>
+
+    <section id="java" class="section">
+        <div class="container">
+            <h2>Java</h2>
+            <p><span class="highlight">Java</span>, nesne yönelimli, platform bağımsız ve genel amaçlı bir programlama dilidir.</p>
+            <p>Örneğin, bir Java programında bir metni ekrana yazdırmak için şu kod kullanılır:</p>
+            <pre>
+                <code>
+                    System.out.println("Merhaba Dünya!");
+                </code>
+            </pre>
+        </div>
+    </section>
+
+    <section id="csharp" class="section">
+        <div class="container">
+            <h2>C#</h2>
+            <p><span class="highlight">C#</span>, Microsoft tarafından geliştirilen, genel amaçlı ve nesne yönelimli bir programlama dilidir.</p>
+            <p>Örneğin, bir C# programında bir metni ekrana yazdırmak için şu kod kullanılır:</p>
+            <pre>
+                <code>
+                    Console.WriteLine("Merhaba Dünya!");
+                </code>
+            </pre>
+        </div>
+    </section>
+
+    <section id="php" class="section">
+        <div class="container">
+            <h2>PHP</h2>
+            <p><span class="highlight">PHP</span>, sunucu taraflı ve genel amaçlı bir betik dildir.</p>
+            <p>Örneğin, bir PHP kodunda bir metni ekrana yazdırmak için şu kod kullanılır:</p>
+            <pre>
+                <code>
+                    &lt;?php
+                        echo "Merhaba Dünya!";
+                    ?&gt;
+                </code>
+            </pre>
+        </div>
+    </section>
+
+    <section id="ruby" class="section">
+        <div class="container">
+            <h2>Ruby</h2>
+            <p><span class="highlight">Ruby</span>, basit ve anlaşılır söz dizimine sahip, nesne yönelimli bir programlama dilidir.</p>
+            <p>Örneğin, bir Ruby programında bir metni ekrana yazdırmak için şu kod kullanılır:</p>
+            <pre>
+                <code>
+                    puts "Merhaba Dünya!"
+                </code>
+            </pre>
+        </div>
+    </section>
+
+    <!-- Diğer konu başlıkları ve açıklamaları buraya eklenebilir -->
+
+    <footer>
+        <div class="container">
+            <p>Kurucu ve Yönetici: <span class="highlight">İbrahim Hışır</span></p>
+            <p>İletişim: <a href="mailto:hisir7618@gmail.com">hisir7618@gmail.com</a></p>
+            <p>Kuruluş Tarihi: <span class="highlight">20.02.2024</span></p>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+ 
